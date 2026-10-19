@@ -2,3 +2,4 @@
 Site pessoal de Giuliana Freitas — urbanista (TEIA eAtivo Urbano)
 
 Publicado em https://giulianafreitas.vercel.app
+Deploy automático pela Vercel.
