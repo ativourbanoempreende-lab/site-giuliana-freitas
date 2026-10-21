@@ -7,7 +7,7 @@
 <meta name="description" content="Giuliana Freitas, arquiteta e urbanista com 27 anos em planejamento territorial. Diagnóstico, Plano Diretor e Agenda 2030 para municípios (TEIA Planejamento e Desenho) e viabilidade de glebas para proprietários (Ativo Urbano).">
 <meta property="og:title" content="Giuliana Freitas — Arquiteta e Urbanista">
 <meta property="og:description" content="27 anos planejando territórios: municípios, Planos Diretores, Agenda 2030 e viabilidade de glebas.">
-<meta property="og:image" content="foto-8563.jpg">
+<meta property="og:image" content="foto-8716.jpg">
 <meta property="og:locale" content="pt_BR">
 <style>
 @font-face{font-family:"Cormorant Garamond";font-weight:500;font-style:normal;font-display:swap;src:url(cormorant-garamond-latin-500-normal.woff2) format("woff2")}
@@ -72,11 +72,13 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,245,242,.92);backdro
 /* faixa de credenciais */
 .faixa{background:var(--carvao);color:#E9E4DC}
 .faixa .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.faixa div div{padding:30px 24px;border-left:1px solid rgba(255,255,255,.1)}
-.faixa div div:first-child{border-left:0;padding-left:0}
+.faixa .wrap>a{display:block;text-decoration:none;color:inherit;padding:30px 24px;border-left:1px solid rgba(255,255,255,.1);transition:background .2s}
+.faixa .wrap>a:first-child{border-left:0}
+.faixa .wrap>a:hover{background:rgba(255,255,255,.06)}
+.faixa .wrap>a b::after{content:" →";color:var(--ouro);font-size:.8em}
 .faixa b{display:block;font-family:var(--serif);font-size:26px;font-weight:600;color:#fff;line-height:1.15}
 .faixa span{font-size:13px;color:#B9B1A6}
-@media (max-width:900px){.faixa .wrap{grid-template-columns:1fr 1fr}.faixa div div{border-left:0;padding-left:0}}
+@media (max-width:900px){.faixa .wrap{grid-template-columns:1fr 1fr}.faixa .wrap>a{border-left:0;padding-left:0}}
 
 section{padding:104px 0}
 .cab{max-width:720px;margin-bottom:56px}
@@ -99,6 +101,20 @@ section{padding:104px 0}
 .terceira{margin-top:28px;display:grid;grid-template-columns:1fr 2fr;gap:36px;align-items:center;padding:36px;background:var(--areia);border-radius:6px}
 .terceira h3{font-size:26px}
 @media (max-width:900px){.frentes,.terceira{grid-template-columns:1fr}}
+
+/* desenvolvimento local */
+.dl{background:var(--verde);color:#E6EDE7}
+.dl h2{color:#fff}.dl h2 em{color:var(--ouro)}
+.dl-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.dl-lead{font-size:17px;margin:20px 0 32px;color:#D7E2DA}
+.btn-ouro{background:var(--ouro);color:var(--carvao)}
+.btn-ouro:hover{background:#d8b56f}
+.dl-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:36px}
+.dl-card h3{color:#fff;font-size:26px;margin-bottom:14px}
+.dl-card ul{list-style:none}
+.dl-card li{padding:12px 0 12px 22px;border-top:1px solid rgba(255,255,255,.14);position:relative;font-size:15px}
+.dl-card li::before{content:"";position:absolute;left:0;top:21px;width:7px;height:7px;background:var(--ouro)}
+@media (max-width:900px){.dl-grid{grid-template-columns:1fr;gap:40px}.dl-card{padding:28px 24px}}
 
 /* experiencia */
 .exp{background:#fff}
@@ -168,16 +184,16 @@ footer a{text-decoration:none}
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Planejamento territorial · CAU A29564-7</p>
+        <p class="eyebrow">Arquiteta e urbanista · CAU A29564-7</p>
         <h1>Leio o território antes de <em>desenhar o futuro</em> dele.</h1>
-        <p class="lead">Sou arquiteta e urbanista há 27 anos. Trabalho com municípios, em diagnóstico, Plano Diretor e Agenda 2030, e com proprietários de terra, em viabilidade de glebas e loteamentos. Já estive dos dois lados: como gestora na Secretaria de Desenvolvimento Urbano do DF e como consultora.</p>
+        <p class="lead">Há 27 anos transformo a leitura do território em decisões: Planos Diretores, projetos urbanísticos e estratégias de desenvolvimento para municípios, e viabilidade de glebas para quem tem uma terra nas mãos.</p>
         <div class="acoes">
           <a class="btn btn-vinho seta" href="#municipios">Para municípios</a>
           <a class="btn btn-linha seta" href="#glebas">Para proprietários de glebas</a>
         </div>
       </div>
       <div class="hero-foto">
-        <img src="foto-8563.jpg" alt="Giuliana Freitas, arquiteta e urbanista" width="945" height="1400">
+        <img src="foto-8716.jpg" alt="Giuliana Freitas, arquiteta e urbanista" width="933" height="1400">
         <div class="selo"><b>27 anos</b>planejando cidades<br>e territórios</div>
       </div>
     </div>
@@ -185,10 +201,12 @@ footer a{text-decoration:none}
 
   <div class="faixa">
     <div class="wrap">
-      <div><b>SEDUH/GDF</b><span>gerente e diretora no planejamento do DF</span></div>
-      <div><b>PDOT e LUOS</b><span>as leis que ordenam o território do DF</span></div>
-      <div><b>Planos Diretores</b><span>diagnóstico, zoneamento e participação</span></div>
-      <div><b>Pesquisa IPEA</b><span>núcleos urbanos informais no Brasil</span></div>
+      <a href="#experiencia"><b>Gestão pública</b><span>planejamento territorial na SEDUH/GDF</span></a>
+      <a href="#municipios"><b>Planos Diretores</b><span>e leis urbanísticas para municípios</span></a>
+      <a href="#projetos"><b>Profissional liberal</b><span>novos parcelamentos e regularização fundiária</span></a>
+      <a href="#sobre"><b>Pesquisa e docência</b><span>IPEA, UnB e UNIEURO</span></a>
+    </div>
+    </div>
     </div>
   </div>
 
@@ -234,9 +252,9 @@ footer a{text-decoration:none}
         </article>
       </div>
 
-      <div class="terceira">
-        <h3>Regularização fundiária e ordenamento</h3>
-        <p>Planos de ocupação, núcleos urbanos informais e áreas rurais com restrição ambiental. Comecei pela Secretaria de Desenvolvimento Urbano do DF, onde planejei a regularização de loteamentos irregulares e aprovei projetos de novos parcelamentos. Depois vieram a pesquisa do IPEA e planos de ocupação aprovados no Brasília Ambiental (IBRAM).</p>
+      <div class="terceira" id="projetos">
+        <h3>Projetos urbanísticos e parcelamento do solo</h3>
+        <p>Novos loteamentos, bairros planejados, condomínios e regularização fundiária, no Distrito Federal e em outros estados, do estudo preliminar à aprovação. Minha experiência começou no poder público do DF, seguiu na prática com projetos e se desdobrou em consultorias, pesquisas e docência sobre o desenho e o planejamento do território.</p>
       </div>
     </div>
   </section>
