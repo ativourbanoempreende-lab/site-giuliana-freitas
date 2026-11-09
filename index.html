@@ -156,7 +156,8 @@ section{padding:104px 0}
 /* contato */
 .contatos{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .cartao{padding:40px;border-radius:6px;background:#fff;border:1px solid rgba(31,31,31,.08);display:flex;flex-direction:column;align-items:flex-start}
-.cartao .btn{margin-top:auto}
+.cartao .btn,.cartao .acoes{margin-top:auto}
+.cartao .acoes{display:flex;flex-wrap:wrap;gap:12px}
 .cartao .tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--verde)}
 .cartao.au .tag{color:var(--vinho)}
 .cartao h3{margin:10px 0 14px}
@@ -214,7 +215,7 @@ footer a{text-decoration:none}
 
   <div class="faixa">
     <div class="wrap">
-      <a href="#experiencia"><b>Gestão pública</b><span>planejamento territorial na SEDUH/GDF</span></a>
+      <a href="#experiencia"><b>Gestão pública</b><span>SEDUH/GDF, CAU/BR e CAU/DF</span></a>
       <a href="#municipios"><b>Planos Diretores</b><span>e leis urbanísticas para municípios</span></a>
       <a href="#projetos"><b>Profissional liberal</b><span>novos parcelamentos e regularização fundiária</span></a>
       <a href="#sobre"><b>Pesquisa e docência</b><span>IPEA, UnB e UNIEURO</span></a>
@@ -369,7 +370,10 @@ footer a{text-decoration:none}
           <span class="tag">TEIA · Prefeituras e instituições</span>
           <h3>Planejamento para municípios</h3>
           <p>Para diagnóstico ESG, Plano Diretor, Agenda 2030 e projetos para o seu município.</p>
-          <a class="btn btn-vinho seta" href="mailto:teiaplanejamentodesenho@gmail.com?subject=Contato%20pelo%20site">Enviar e-mail</a>
+          <div class="acoes">
+            <a class="btn btn-vinho seta" href="mailto:teiaplanejamentodesenho@gmail.com?subject=Contato%20pelo%20site">Enviar e-mail</a>
+            <a class="btn btn-linha seta" href="https://wa.me/5561995893549" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
         </div>
         <div class="cartao au">
           <span class="tag">TEIA · Proprietários e investidores</span>
