@@ -155,7 +155,8 @@ section{padding:104px 0}
 
 /* contato */
 .contatos{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.cartao{padding:40px;border-radius:6px;background:#fff;border:1px solid rgba(31,31,31,.08)}
+.cartao{padding:40px;border-radius:6px;background:#fff;border:1px solid rgba(31,31,31,.08);display:flex;flex-direction:column;align-items:flex-start}
+.cartao .btn{margin-top:auto}
 .cartao .tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--verde)}
 .cartao.au .tag{color:var(--vinho)}
 .cartao h3{margin:10px 0 14px}
@@ -163,6 +164,11 @@ section{padding:104px 0}
 .cartao .linhas{font-size:15px;margin-bottom:26px}
 .cartao .linhas a{display:block;text-decoration:none;padding:6px 0;color:var(--carvao)}
 .cartao .linhas a:hover{color:var(--vinho)}
+.canais{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 48px;margin-top:40px;font-size:15px}
+.canais a{text-decoration:none;color:var(--carvao);overflow-wrap:anywhere}
+.canais a:hover{color:var(--vinho)}
+.canais span{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ouro);margin-bottom:4px}
+@media (max-width:600px){.canais{flex-direction:column;align-items:flex-start;gap:18px}}
 @media (max-width:900px){.contatos{grid-template-columns:1fr}}
 
 footer{border-top:1px solid var(--areia2);padding:36px 0 44px;font-size:13px;color:var(--taupe)}
@@ -363,22 +369,19 @@ footer a{text-decoration:none}
           <span class="tag">TEIA · Prefeituras e instituições</span>
           <h3>Planejamento para municípios</h3>
           <p>Para diagnóstico, Plano Diretor, Agenda 2030 e projetos para o seu município.</p>
-          <div class="linhas">
-            <a href="mailto:teiaplanejamentodesenho@gmail.com">teiaplanejamentodesenho@gmail.com</a>
-            <a href="https://wa.me/5561995893549" target="_blank" rel="noopener">WhatsApp (61) 99589-3549</a>
-          </div>
           <a class="btn btn-vinho seta" href="mailto:teiaplanejamentodesenho@gmail.com?subject=Contato%20pelo%20site">Enviar e-mail</a>
         </div>
         <div class="cartao au">
           <span class="tag">TEIA · Proprietários e investidores</span>
           <h3>Ativo Urbano: viabilidade de glebas</h3>
           <p>A consultoria da TEIA para entender o que a sua gleba pode se tornar antes de decidir. O primeiro passo é um formulário rápido sobre a área.</p>
-          <div class="linhas">
-            <a href="mailto:teiaplanejamentodesenho@gmail.com?subject=Ativo%20Urbano%20-%20viabilidade%20de%20gleba">teiaplanejamentodesenho@gmail.com</a>
-            <a href="https://www.instagram.com/giuliana.de.freitas/" target="_blank" rel="noopener">Instagram @giuliana.de.freitas</a>
-          </div>
           <a class="btn btn-linha seta" href="https://docs.google.com/forms/d/1M7M6KUyb21lTlT_Wx0ztcadXC5VM-QMzsD00GDPpjbU/viewform" target="_blank" rel="noopener">Preencher formulário</a>
         </div>
+      </div>
+      <div class="canais">
+        <a href="mailto:teiaplanejamentodesenho@gmail.com"><span>E-mail</span>teiaplanejamentodesenho@gmail.com</a>
+        <a href="https://wa.me/5561995893549" target="_blank" rel="noopener"><span>WhatsApp</span>(61) 99589-3549</a>
+        <a href="https://www.instagram.com/giuliana.de.freitas/" target="_blank" rel="noopener"><span>Instagram</span>@giuliana.de.freitas</a>
       </div>
     </div>
   </section>
